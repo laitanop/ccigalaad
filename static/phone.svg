@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1712px" height="1701px" viewBox="0 0 1712 1701" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#96AD32" stroke-width="100" fill="#96AD32" fill-rule="nonzero" cx="886" cy="846" r="750"></circle>
+        <g id="phone-solid" transform="translate(463.000000, 449.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M757.446675,38.1651826 L597.793672,0.947218651 C580.44676,-3.08472744 562.63931,6.06468869 555.577734,22.5026228 L481.891733,196.186454 C475.444208,211.38379 479.742558,229.217397 492.484096,239.607412 L585.512672,316.524538 C530.248172,435.466948 433.688808,534.404702 313.488519,591.317171 L237.346318,497.341813 C226.907468,484.4706 209.407042,480.128504 194.362817,486.641648 L22.4288148,561.077576 C6.00297713,568.366094 -3.05426049,586.354776 0.937064561,603.878234 L37.7800651,765.156078 C41.6178776,781.904162 56.3550778,794 73.7019905,794 C466.847508,794 786,472.219687 786,74.4526974 C786,57.0843142 774.179537,42.0420538 757.446675,38.1651826 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
