@@ -6,6 +6,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import ResponsiveBar from './ResponsiveBar';
+
+
 
 
 const styles = theme => ({
@@ -18,6 +21,10 @@ const styles = theme => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
+    [theme.breakpoints.up("md")]: {
+			marginLeft: 100,
+			marginRight: 20
+		}
   },
   colorBar: {
 		background: "transparent"
@@ -36,7 +43,15 @@ const styles = theme => ({
 		[theme.breakpoints.down("md")]: {
 			display: "none"
 		}
-	},
+  },
+  responsive: {
+		[theme.breakpoints.down("md")]: {
+			visibility: "visible"
+		},
+		[theme.breakpoints.up("md")]: {
+			visibility: "hidden"
+		}
+	}
 });
 
 function NavigationBar(props) {
@@ -73,7 +88,7 @@ function NavigationBar(props) {
 					<Button color='inherit' className={classes.buttons} href='/contacto'>
             Contacto
 					</Button>
-  
+          <div className={classes.responsive}><ResponsiveBar /></div>
         </Toolbar>
       </AppBar>
     </div>
