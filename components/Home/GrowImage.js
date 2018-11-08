@@ -16,15 +16,15 @@ function GrowImage () {
           id='Artboard'
           className='cls-1'
           stroke='none'
-          stroke-width='2'
+          strokeWidth='2'
           fill='none'
-          fill-rule='evenodd'
+          fillRule='evenodd'
         >
           <ellipse
             className='cls-1'
             id='Oval'
             fill='#6A772A'
-            fill-rule='nonzero'
+            fillRule='nonzero'
             cx='144'
             cy='137'
             rx='135'
@@ -35,7 +35,7 @@ function GrowImage () {
             id='Path-2'
             stroke='#6A772A'
             fill='#FFFFFF'
-            fill-rule='nonzero'
+            fillRule='nonzero'
           />
         </g>
       </svg>

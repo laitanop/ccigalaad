@@ -58,7 +58,7 @@ function Nosotros (props) {
       <Grid container spacing={24}>
 
         <Grid item xs={12} sm={6}>
-          <div className={classes.Text}>Somos CCI Gaalad</div>
+          <div className={classes.Text}>Somos CCI Galaad</div>
           <Grid item xs={12}>
 
             <div className={classes.description}>

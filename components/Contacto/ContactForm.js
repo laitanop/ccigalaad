@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography'
+
 import TextField from '@material-ui/core/TextField'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
@@ -48,7 +48,7 @@ class ContactForm extends React.Component {
                   Contacto{' '}
                 </div>
                 <div style={{ textAlign: 'center', fontSize: '18px' }}>
-                  Dirección: Centro de retiros Galaad, concepción San Rafale de Herdia
+                  Dirección: Centro de retiros Galaad, Concepción San Rafael de Heredia
                 </div>
                 <div style={{ textAlign: 'center', fontSize: '18px' }}>
                   Telefono: +506 70-03-8087

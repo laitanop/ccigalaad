@@ -3,47 +3,101 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import MobileStepper from '@material-ui/core/MobileStepper'
 import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
+
 import Button from '@material-ui/core/Button'
 
 import SwipeableViews from 'react-swipeable-views'
 
 const tutorialSteps = [
   {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/525944109&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Indicadores espirituales que alertan.',
+    person: 'Pastor Rolando Soto',
+    id: 15
+  },
+  {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/522415377&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Aférrate a la decisión divina.',
+    person: 'Pastor Rolando Soto',
+    id: 14
+  },
+  {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/518910954&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Vence tus preocupaciones.',
+    person: 'Raquel Acosta V.',
+    id: 13
+  },
+  {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/515351529&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Palabras que Ganan.',
+    person: 'Pastor Rolando Soto',
+    id: 12
+  },
+  {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/513819216&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Decisiones vitales.',
+    person: 'Pastor Rolando Soto',
+    id: 11
+  },
+  {
+    src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/508764744&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    name: 'Pensamientos poderosos.',
+    person: 'Pastor Rolando Soto',
+    id: 10
+  },
+  {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/492538365&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Crear una cultura de servico en casa.'
+    name: 'Crear una cultura de servico en casa.',
+    person: 'Pastor Rolando Soto',
+    id: 9
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/485937321&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Imparte fuerzas para vencer el miedo.'
+    name: 'Imparte fuerzas para vencer el miedo.',
+    person: 'Pastor Rolando Soto',
+    id: 8
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/480298671&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Sé vivir.'
+    name: 'Sé vivir.',
+    person: 'Pastor Rolando Soto',
+    id: 7
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/480184503&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Este es tu momento.'
+    name: 'Este es tu momento.',
+    person: 'Pastor Rolando Soto',
+    id: 6
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/475809495&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Una mala racha.'
+    name: 'Una mala racha.',
+    person: 'Pastor Rolando Soto',
+    id: 5
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/472950204&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Donde esta Dios cuando tengo dificultades.'
+    name: 'Donde esta Dios cuando tengo dificultades.',
+    person: 'Pastor Rolando Soto',
+    id: 4
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471358830&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Pon tu confianza en el señor.'
+    name: 'Pon tu confianza en el señor.',
+    person: 'Pastor Rolando Soto',
+    id: 3
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/461122575&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Aspira a lo mejor.'
+    name: 'Aspira a lo mejor.',
+    person: 'Pastor Rolando Soto',
+    id: 2
   },
   {
     src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/457565901&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-    label: 'Un botín prohibido.'
+    name: 'Un botín prohibido.',
+    person: 'Pastor Rolando Soto',
+    id: 1
   }
 ]
 
@@ -101,7 +155,7 @@ class VideoCardResponsivo extends React.Component {
           <div
             style={{ fontSize: '16px', textAlign: 'left', marginTop: '30px' }}
           >
-            {tutorialSteps[activeStep].label}
+            {tutorialSteps[activeStep].name}
             {' '}
             <span
               style={{
@@ -123,14 +177,16 @@ class VideoCardResponsivo extends React.Component {
           enableMouseEvents
         >
           {tutorialSteps.map(step => (
-            <iframe
-              width='100%'
-              height='150'
-              scrolling='no'
-              frameborder='no'
-              allow='autoplay'
-              src={step.src}
-            />
+            <div key={step.id}>
+              <iframe
+                width='100%'
+                height='150'
+                scrolling='no'
+                frameBorder='no'
+                allow='autoplay'
+                src={step.src}
+              />
+            </div>
           ))}
         </SwipeableViews>
         <MobileStepper
