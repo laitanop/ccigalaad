@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../src/withRoot'
 
 import Layout from '../components/Layout'
+import ContactForm from '../components/Contacto/ContactForm'
 
 const styles = theme => ({
   root: {
@@ -16,7 +17,7 @@ class Contact extends React.Component {
   render () {
     return (
       <Layout>
-        contacto
+        <ContactForm />
 
       </Layout>
     )

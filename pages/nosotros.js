@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 import withRoot from '../src/withRoot'
 
 import Layout from '../components/Layout'
+import Nosotros from '../components/Nosotros/Nosotros'
 
 const styles = theme => ({
   root: {
@@ -16,7 +17,7 @@ class AboutUs extends React.Component {
   render () {
     return (
       <Layout>
-        Nosotros
+        <Nosotros />
 
       </Layout>
     )
