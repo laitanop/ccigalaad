@@ -50,12 +50,11 @@ function NewsCci (props) {
         />
         <CardContent>
           <div className={classes.title}>
-            Musica Acustica
+            Día de clamor
 
           </div>
           <div className={classes.text}>
-            Múscia que edifica en un ambiente amistoso y breves reflexiones
-            para le alma. Ven y acompañanos!
+            Al iniciar el mes de diciembre, lo hacemos en oración. Realizaremos un tiempo de oración entre las 9:30 de la mañana y las 12:30. Luego hay un espacio de almuerzo compartido (tipo picnic), para dar paso a la Celebración de CCI Galaad a las 3 de la tarde.
 
           </div>
 
@@ -69,7 +68,7 @@ function NewsCci (props) {
             calendar_today
           </i>&nbsp; &nbsp;
 
-          Sabado 27 de Octubre 2018,  de 3:00-5:00pm
+          Sabado 1 de Diciembre 2018,  de 9:30am-12:30pm
 
         </div>
       </CardActions>

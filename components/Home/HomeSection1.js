@@ -24,10 +24,13 @@ const styles = theme => ({
     color: theme.palette.text.secondary,
 
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing.unit * 10
+      padding: theme.spacing.unit * 10,
+      // change padding here for equal
+      paddingBottom: '115px'
     },
     [theme.breakpoints.up('xl')]: {
-      padding: theme.spacing.unit * 20
+      padding: theme.spacing.unit * 20,
+      paddingBottom: '187px'
     }
   },
   paperNews: {
@@ -137,7 +140,7 @@ function HomeSection1 (props) {
 
           <Paper className={classes.paperNews} elevation={24}>
             <div style={{ backgroundColor: '#dfe9a0', marginBottom: '10px' }}>
-              Canta al Creador
+              Noticias
             </div>
 
             <NewsCci />
